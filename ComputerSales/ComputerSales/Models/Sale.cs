@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
 
 namespace ComputerSales.Models
 {
@@ -13,6 +9,9 @@ namespace ComputerSales.Models
         public int ClientId { get; private set; }
         public DateTime SaleDate { get; private set; }
         public decimal TotalAmount { get; private set; }
+
+        public Client Client { get; private set; } = null!;
+        public ICollection<SaleProduct> SaleProducts { get; private set; } = new List<SaleProduct>();
 
         private Sale(int id, int clientId, DateTime saleDate, decimal totalAmount)
         {

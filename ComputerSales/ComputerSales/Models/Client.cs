@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
 
 namespace ComputerSales.Models
 {
@@ -12,6 +8,8 @@ namespace ComputerSales.Models
         public int Id { get; private set; }
         public string FullName { get; private set; }
         public string Phone { get; private set; }
+
+        public ICollection<Sale> Sales { get; private set; } = new List<Sale>();
 
         private Client(int id, string fullName, string phone)
         {

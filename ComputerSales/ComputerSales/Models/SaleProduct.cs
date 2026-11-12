@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComputerSales.Models
 {
@@ -13,6 +9,9 @@ namespace ComputerSales.Models
         public int ProductId { get; private set; }
         public int Count { get; private set; }
         public decimal PriceAtSale { get; private set; }
+
+        public Sale Sale { get; private set; } = null!;
+        public Product Product { get; private set; } = null!;
 
         private SaleProduct(int id, int saleId, int productId, int count, decimal priceAtSale)
         {

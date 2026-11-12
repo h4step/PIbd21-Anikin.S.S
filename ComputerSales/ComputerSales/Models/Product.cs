@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ComputerSales.Models.Enums;
-using System;
 
 namespace ComputerSales.Models
 {
@@ -17,6 +13,9 @@ namespace ComputerSales.Models
         public ProductFeatures Features { get; private set; }
         public decimal Price { get; private set; }
         public decimal CostPrice { get; private set; }
+
+        public Category Category { get; private set; } = null!;
+        public ICollection<SaleProduct> SaleProducts { get; private set; } = new List<SaleProduct>();
 
         private Product(int id, int categoryId, string name, ProductOrigin origin, ProductFeatures features, decimal price, decimal costPrice)
         {
