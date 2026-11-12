@@ -42,6 +42,7 @@
             dataGridViewCategories.Name = "dataGridViewCategories";
             dataGridViewCategories.Size = new Size(240, 150);
             dataGridViewCategories.TabIndex = 0;
+            dataGridViewCategories.CellContentClick += dataGridViewCategories_CellContentClick;
             // 
             // btnAdd
             // 
@@ -51,6 +52,7 @@
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Добавить";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
             // 
@@ -60,6 +62,7 @@
             btnEdit.TabIndex = 2;
             btnEdit.Text = "Редактировать";
             btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
@@ -69,6 +72,7 @@
             btnDelete.TabIndex = 3;
             btnDelete.Text = "Удалить";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // CategoriesForm
             // 
