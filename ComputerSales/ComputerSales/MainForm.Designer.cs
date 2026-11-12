@@ -59,21 +59,21 @@
             // категорииToolStripMenuItem
             // 
             категорииToolStripMenuItem.Name = "категорииToolStripMenuItem";
-            категорииToolStripMenuItem.Size = new Size(180, 22);
+            категорииToolStripMenuItem.Size = new Size(131, 22);
             категорииToolStripMenuItem.Text = "Категории";
             категорииToolStripMenuItem.Click += КатегорииToolStripMenuItem_Click;
             // 
             // товарыToolStripMenuItem
             // 
             товарыToolStripMenuItem.Name = "товарыToolStripMenuItem";
-            товарыToolStripMenuItem.Size = new Size(180, 22);
+            товарыToolStripMenuItem.Size = new Size(131, 22);
             товарыToolStripMenuItem.Text = "Товары";
             товарыToolStripMenuItem.Click += ТоварыToolStripMenuItem_Click;
             // 
             // клиентыToolStripMenuItem
             // 
             клиентыToolStripMenuItem.Name = "клиентыToolStripMenuItem";
-            клиентыToolStripMenuItem.Size = new Size(180, 22);
+            клиентыToolStripMenuItem.Size = new Size(131, 22);
             клиентыToolStripMenuItem.Text = "Клиенты";
             клиентыToolStripMenuItem.Click += КлиентыToolStripMenuItem_Click;
             // 
@@ -88,7 +88,7 @@
             // продажиToolStripMenuItem
             // 
             продажиToolStripMenuItem.Name = "продажиToolStripMenuItem";
-            продажиToolStripMenuItem.Size = new Size(180, 22);
+            продажиToolStripMenuItem.Size = new Size(125, 22);
             продажиToolStripMenuItem.Text = "Продажи";
             продажиToolStripMenuItem.Click += ПродажиToolStripMenuItem_Click;
             // 
@@ -107,7 +107,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "MainForm";
-            Text = "Form1";
+            Text = "ComputerSales";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
