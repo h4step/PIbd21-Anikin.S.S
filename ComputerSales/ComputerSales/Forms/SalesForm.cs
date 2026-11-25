@@ -48,9 +48,20 @@ namespace ComputerSales.Forms
                 if (dataGridViewSales.Columns["ClientId"] != null)
                     dataGridViewSales.Columns["ClientId"].HeaderText = "ID клиента";
                 if (dataGridViewSales.Columns["SaleDate"] != null)
+                {
                     dataGridViewSales.Columns["SaleDate"].HeaderText = "Дата продажи";
+                    dataGridViewSales.Columns["SaleDate"].DefaultCellStyle.Format = "dd.MM.yyyy HH:mm";
+                }
                 if (dataGridViewSales.Columns["TotalAmount"] != null)
+                {
                     dataGridViewSales.Columns["TotalAmount"].HeaderText = "Сумма";
+                    dataGridViewSales.Columns["TotalAmount"].DefaultCellStyle.Format = "N2";
+                }
+
+                if (dataGridViewSales.Columns["Client"] != null)
+                    dataGridViewSales.Columns["Client"].Visible = false;
+                if (dataGridViewSales.Columns["SaleProducts"] != null)
+                    dataGridViewSales.Columns["SaleProducts"].Visible = false;
 
                 LoadSaleItemsForSelected();
             }

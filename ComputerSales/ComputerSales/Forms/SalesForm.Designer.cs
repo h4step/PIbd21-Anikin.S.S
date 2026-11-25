@@ -34,32 +34,38 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewSales).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSaleItems).BeginInit();
             SuspendLayout();
-         
+            // 
+            // dataGridViewSales
+            // 
             dataGridViewSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSales.Location = new Point(12, 22);
             dataGridViewSales.Name = "dataGridViewSales";
-            dataGridViewSales.Size = new Size(324, 331);
+            dataGridViewSales.Size = new Size(667, 331);
             dataGridViewSales.TabIndex = 0;
-
-         
+            // 
+            // dataGridViewSaleItems
+            // 
             dataGridViewSaleItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewSaleItems.Location = new Point(435, 22);
+            dataGridViewSaleItems.Location = new Point(792, 22);
             dataGridViewSaleItems.Name = "dataGridViewSaleItems";
-            dataGridViewSaleItems.Size = new Size(339, 331);
+            dataGridViewSaleItems.Size = new Size(675, 331);
             dataGridViewSaleItems.TabIndex = 1;
-
-          
-            btnAdd.Location = new Point(21, 404);
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new Point(21, 376);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(304, 51);
             btnAdd.TabIndex = 2;
             btnAdd.Text = " Добавить";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
-           
+            // 
+            // SalesForm
+            // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1504, 450);
             Controls.Add(btnAdd);
             Controls.Add(dataGridViewSaleItems);
             Controls.Add(dataGridViewSales);
