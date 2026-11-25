@@ -42,7 +42,7 @@
             dataGridViewCategories.Name = "dataGridViewCategories";
             dataGridViewCategories.Size = new Size(240, 150);
             dataGridViewCategories.TabIndex = 0;
-            dataGridViewCategories.CellContentClick += dataGridViewCategories_CellContentClick;
+
             // 
             // btnAdd
             // 

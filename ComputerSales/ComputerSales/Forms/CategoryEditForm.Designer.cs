@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtName = new TextBox();
+            txtDescription = new TextBox();
             label1 = new Label();
             label2 = new Label();
             btnSave = new Button();
             btnCancel = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.Location = new Point(59, 44);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 23);
-            textBox1.TabIndex = 0;
+            txtName.Location = new Point(59, 44);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(135, 23);
+            txtName.TabIndex = 0;
             // 
-            // textBox2
+            // txtDescription
             // 
-            textBox2.Location = new Point(225, 44);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(135, 23);
-            textBox2.TabIndex = 1;
+            txtDescription.Location = new Point(225, 44);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(135, 23);
+            txtDescription.TabIndex = 1;
             // 
             // label1
             // 
@@ -95,8 +95,8 @@
             Controls.Add(btnSave);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtDescription);
+            Controls.Add(txtName);
             Name = "CategoryEditForm";
             Text = "CategoryEditForm";
             ResumeLayout(false);
@@ -105,8 +105,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtName;
+        private TextBox txtDescription;
         private Label label1;
         private Label label2;
         private Button btnSave;
