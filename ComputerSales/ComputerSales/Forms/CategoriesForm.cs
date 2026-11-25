@@ -10,7 +10,6 @@ namespace ComputerSales.Forms
     {
         private readonly ICategoryRepository _categoryRepository;
 
-        // Конструктор с внедрением зависимости (репозитория)
         public CategoriesForm(ICategoryRepository categoryRepository)
         {
             InitializeComponent();
@@ -18,7 +17,6 @@ namespace ComputerSales.Forms
             LoadCategories();
         }
 
-        // Метод для загрузки/обновления данных в таблице
         private void LoadCategories()
         {
             try
@@ -26,7 +24,6 @@ namespace ComputerSales.Forms
                 var categories = _categoryRepository.GetAll().ToList();
                 dataGridViewCategories.DataSource = categories;
 
-                // Настройка заголовков столбцов (опционально, для красоты)
                 if (dataGridViewCategories.Columns["Id"] != null)
                     dataGridViewCategories.Columns["Id"].HeaderText = "ID";
                 if (dataGridViewCategories.Columns["Name"] != null)
@@ -34,7 +31,6 @@ namespace ComputerSales.Forms
                 if (dataGridViewCategories.Columns["Description"] != null)
                     dataGridViewCategories.Columns["Description"].HeaderText = "Описание";
 
-                // Скрываем колонку навигационных свойств, если она отображается автоматически
                 if (dataGridViewCategories.Columns["Products"] != null)
                     dataGridViewCategories.Columns["Products"].Visible = false;
             }
@@ -44,7 +40,6 @@ namespace ComputerSales.Forms
             }
         }
 
-        // Кнопка «Добавить»
         private void btnAdd_Click(object sender, EventArgs e)
         {
             using (var editForm = new CategoryEditForm())
@@ -53,10 +48,9 @@ namespace ComputerSales.Forms
                 {
                     try
                     {
-                        // Создаем объект через фабричный метод с проверкой на пустые поля
                         var newCategory = Category.CreateEntity(0, editForm.CategoryName, editForm.CategoryDescription);
                         _categoryRepository.Add(newCategory);
-                        LoadCategories(); // Перезагружаем таблицу
+                        LoadCategories();
                     }
                     catch (Exception ex)
                     {
@@ -66,7 +60,6 @@ namespace ComputerSales.Forms
             }
         }
 
-        // Кнопка «Редактировать»
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (dataGridViewCategories.SelectedRows.Count == 0)
@@ -75,7 +68,6 @@ namespace ComputerSales.Forms
                 return;
             }
 
-            // Получаем выбранную строку как объект модели Category
             var selectedCategory = (Category)dataGridViewCategories.SelectedRows[0].DataBoundItem;
 
             using (var editForm = new CategoryEditForm(selectedCategory.Name, selectedCategory.Description))
@@ -84,10 +76,9 @@ namespace ComputerSales.Forms
                 {
                     try
                     {
-                        // Создаем обновленный объект с тем же ID
                         var updatedCategory = Category.CreateEntity(selectedCategory.Id, editForm.CategoryName, editForm.CategoryDescription);
                         _categoryRepository.Update(updatedCategory);
-                        LoadCategories(); // Перезагружаем таблицу
+                        LoadCategories();
                     }
                     catch (Exception ex)
                     {
@@ -97,7 +88,6 @@ namespace ComputerSales.Forms
             }
         }
 
-        // Кнопка «Удалить»
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dataGridViewCategories.SelectedRows.Count == 0)
@@ -119,7 +109,7 @@ namespace ComputerSales.Forms
                 try
                 {
                     _categoryRepository.Delete(selectedCategory.Id);
-                    LoadCategories(); // Перезагружаем таблицу
+                    LoadCategories();
                 }
                 catch (Exception ex)
                 {

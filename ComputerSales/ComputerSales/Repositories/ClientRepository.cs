@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ComputerSales.Models;
 
 namespace ComputerSales.Repositories
@@ -7,29 +8,27 @@ namespace ComputerSales.Repositories
     {
         public IEnumerable<Client> GetAll()
         {
-            // Заглушка: возвращаем пустой список
             return new List<Client>();
         }
 
         public Client GetById(int id)
         {
-            // Заглушка: возвращаем null
             return null;
         }
 
         public void Add(Client client)
         {
-            // Заглушка для добавления
+            throw new NotImplementedException();
         }
 
         public void Update(Client client)
         {
-            // Заглушка для обновления
+            throw new NotImplementedException();
         }
 
         public void Delete(int id)
         {
-            // Заглушка для удаления
+            throw new NotImplementedException();
         }
     }
 }

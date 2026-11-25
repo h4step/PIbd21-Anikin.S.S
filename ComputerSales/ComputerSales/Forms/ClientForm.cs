@@ -115,10 +115,5 @@ namespace ComputerSales.Forms
                 }
             }
         }
-
-        private void dataGridViewClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

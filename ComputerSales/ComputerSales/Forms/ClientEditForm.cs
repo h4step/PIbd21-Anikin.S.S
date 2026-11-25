@@ -11,12 +11,12 @@ namespace ComputerSales.Forms
         public ClientEditForm()
         {
             InitializeComponent();
-            this.Text = "Добавить клиента";
+            Text = "Добавить клиента";
         }
 
         public ClientEditForm(string fullName, string phone) : this()
         {
-            this.Text = "Редактировать клиента";
+            Text = "Редактировать клиента";
             txtFullName.Text = fullName;
             txtPhone.Text = phone;
         }
@@ -35,14 +35,14 @@ namespace ComputerSales.Forms
                 return;
             }
 
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
     }
 }

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
 
 namespace ComputerSales.Models
 {
@@ -25,7 +20,7 @@ namespace ComputerSales.Models
             if (string.IsNullOrWhiteSpace(fullName))
                 throw new ArgumentException("ФИО клиента не может быть пустым.", nameof(fullName));
 
-            return new Client(id, fullName, phone);
+            return new Client(id, fullName.Trim(), phone?.Trim() ?? string.Empty);
         }
     }
 }

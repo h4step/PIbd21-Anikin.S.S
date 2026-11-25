@@ -1,5 +1,5 @@
-﻿using ComputerSales.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using ComputerSales.Models;
 
 namespace ComputerSales.Repositories
 {

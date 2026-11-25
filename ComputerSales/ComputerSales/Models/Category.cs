@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComputerSales.Models
 {
@@ -24,7 +20,7 @@ namespace ComputerSales.Models
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException("Название категории не может быть пустым.", nameof(name));
 
-            return new Category(id, name, description);
+            return new Category(id, name.Trim(), description?.Trim() ?? string.Empty);
         }
     }
 }

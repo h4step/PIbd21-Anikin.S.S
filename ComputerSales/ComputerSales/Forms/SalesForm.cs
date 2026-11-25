@@ -129,10 +129,9 @@ namespace ComputerSales.Forms
 
                     _saleRepository.Add(sale);
 
-                    // Если репозиторий после Add проставляет sale.Id, используем его; иначе берём максимальный Id из GetAll()
                     int saleId = sale.Id > 0
                         ? sale.Id
-                        : _saleRepository.GetAll().OrderByDescending(s => s.Id).First().Id;
+                        : (_saleRepository.GetAll().OrderByDescending(s => s.Id).FirstOrDefault()?.Id ?? 0);
 
                     foreach (var item in editForm.SelectedItems)
                     {

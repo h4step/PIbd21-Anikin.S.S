@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ComputerSales.Models;
 
 namespace ComputerSales.Repositories
@@ -7,13 +8,12 @@ namespace ComputerSales.Repositories
     {
         public IEnumerable<SaleProduct> GetAll()
         {
-            // Заглушка: возвращаем пустой список связок многие-ко-многим
             return new List<SaleProduct>();
         }
 
         public void Add(SaleProduct saleProduct)
         {
-            // Заглушка для добавления связи продажи с товаром
+            throw new NotImplementedException();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace ComputerSales
             services.AddTransient<ISaleRepository, SaleRepository>();
             services.AddTransient<ISaleProductRepository, SaleProductRepository>();
 
-            // Регистрация главной формы (обязательно для DI)
+            // Регистрация главной формы 
             services.AddTransient<MainForm>();
 
             return services.BuildServiceProvider();

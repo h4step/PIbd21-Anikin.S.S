@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ComputerSales.Models.Enums;
-using System;
 
 namespace ComputerSales.Models
 {
@@ -40,7 +35,7 @@ namespace ComputerSales.Models
             if (costPrice < 0)
                 throw new ArgumentOutOfRangeException(nameof(costPrice), "Себестоимость не может быть отрицательной.");
 
-            return new Product(id, categoryId, name, origin, features, price, costPrice);
+            return new Product(id, categoryId, name.Trim(), origin, features, price, costPrice);
         }
     }
 }
