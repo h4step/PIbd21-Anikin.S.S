@@ -34,34 +34,29 @@
             ((System.ComponentModel.ISupportInitialize)dataGridViewSales).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSaleItems).BeginInit();
             SuspendLayout();
-            // 
-            // dataGridViewSales
-            // 
+         
             dataGridViewSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSales.Location = new Point(12, 22);
             dataGridViewSales.Name = "dataGridViewSales";
-            dataGridViewSales.Size = new Size(215, 102);
+            dataGridViewSales.Size = new Size(324, 331);
             dataGridViewSales.TabIndex = 0;
-            // 
-            // dataGridViewItems
-            // 
+
+         
             dataGridViewSaleItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewSaleItems.Location = new Point(379, 22);
-            dataGridViewSaleItems.Name = "dataGridViewItems";
-            dataGridViewSaleItems.Size = new Size(215, 102);
+            dataGridViewSaleItems.Location = new Point(435, 22);
+            dataGridViewSaleItems.Name = "dataGridViewSaleItems";
+            dataGridViewSaleItems.Size = new Size(339, 331);
             dataGridViewSaleItems.TabIndex = 1;
-            // 
-            // btnAdd
-            // 
-            btnAdd.Location = new Point(12, 234);
+
+          
+            btnAdd.Location = new Point(21, 404);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
             btnAdd.TabIndex = 2;
             btnAdd.Text = " Добавить";
             btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // SalesForm
-            // 
+            btnAdd.Click += btnAdd_Click;
+           
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);

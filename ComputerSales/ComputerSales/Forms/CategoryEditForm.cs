@@ -38,5 +38,6 @@ namespace ComputerSales.Forms
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
     }
 }

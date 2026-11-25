@@ -40,7 +40,7 @@
             dataGridViewClients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewClients.Location = new Point(24, 27);
             dataGridViewClients.Name = "dataGridViewClients";
-            dataGridViewClients.Size = new Size(252, 131);
+            dataGridViewClients.Size = new Size(749, 316);
             dataGridViewClients.TabIndex = 0;
             // 
             // btnAdd

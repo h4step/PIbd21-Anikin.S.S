@@ -40,9 +40,8 @@
             dataGridViewCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCategories.Location = new Point(28, 18);
             dataGridViewCategories.Name = "dataGridViewCategories";
-            dataGridViewCategories.Size = new Size(240, 150);
+            dataGridViewCategories.Size = new Size(706, 334);
             dataGridViewCategories.TabIndex = 0;
-
             // 
             // btnAdd
             // 
@@ -84,7 +83,7 @@
             Controls.Add(btnAdd);
             Controls.Add(dataGridViewCategories);
             Name = "CategoriesForm";
-            Text = "Form1";
+            Text = "CategoriesForm";
             ((System.ComponentModel.ISupportInitialize)dataGridViewCategories).EndInit();
             ResumeLayout(false);
         }

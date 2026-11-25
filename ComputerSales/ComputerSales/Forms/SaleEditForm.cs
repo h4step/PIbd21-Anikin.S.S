@@ -21,7 +21,7 @@ namespace ComputerSales.Forms
         private readonly BindingList<SaleDraftItem> _items = new BindingList<SaleDraftItem>();
 
         public int SelectedClientId => (int)cmbClient.SelectedValue;
-        public DateTime SaleDate => dtpSaleDate.Value;
+        public DateTime SaleDate => DateTime.SpecifyKind(dtpSaleDate.Value, DateTimeKind.Local).ToUniversalTime();
         public decimal TotalAmount => _items.Sum(i => i.LineTotal);
         public IReadOnlyList<SaleDraftItem> SelectedItems => _items.ToList();
 

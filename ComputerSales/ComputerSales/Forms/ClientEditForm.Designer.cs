@@ -35,62 +35,50 @@
             btnSave = new Button();
             btnCancel = new Button();
             SuspendLayout();
-            // 
-            // txtFullName
-            // 
+        
             txtFullName.Location = new Point(25, 31);
             txtFullName.Name = "txtFullName";
             txtFullName.Size = new Size(152, 23);
             txtFullName.TabIndex = 0;
-            // 
-            // txtPhone
-            // 
+       
             txtPhone.Location = new Point(222, 31);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(152, 23);
             txtPhone.TabIndex = 1;
-            // 
-            // label1
-            // 
+          
             label1.AutoSize = true;
             label1.Location = new Point(71, 57);
             label1.Name = "label1";
             label1.Size = new Size(34, 15);
             label1.TabIndex = 2;
             label1.Text = "ФИО";
-            // 
-            // label2
-            // 
+           
             label2.AutoSize = true;
             label2.Location = new Point(276, 57);
             label2.Name = "label2";
             label2.Size = new Size(56, 15);
             label2.TabIndex = 3;
             label2.Text = "Телефон";
-            // 
-            // btnSave
-            // 
-            btnSave.Location = new Point(43, 387);
+          
+            btnSave.Location = new Point(25, 180);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(128, 25);
             btnSave.TabIndex = 4;
             btnSave.Text = "Сохранить";
             btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            btnCancel.Location = new Point(222, 387);
+            btnSave.Click += btnSave_Click;
+           
+            btnCancel.Location = new Point(222, 180);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(128, 25);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // ClientEditForm
-            // 
+            btnCancel.Click += btnCancel_Click;
+          
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(419, 246);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(label2);

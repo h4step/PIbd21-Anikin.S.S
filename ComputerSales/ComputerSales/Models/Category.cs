@@ -1,12 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ComputerSales.Models
 {
+    [Table("categories")]
     public class Category
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; }
-        public string Description { get; private set; }
+        [Key]
+        [Column("id")]
+        public int Id { get; protected set; }
+
+        [Required]
+        [MaxLength(150)]
+        [Column("name")]
+        public string Name { get; protected set; }
+
+        [MaxLength(500)]
+        [Column("description")]
+        public string Description { get; protected set; }
+
+        public virtual ICollection<Product> Products { get; protected set; } = new List<Product>();
+
+        protected Category()
+        {
+            Name = string.Empty;
+            Description = string.Empty;
+        }
 
         private Category(int id, string name, string description)
         {

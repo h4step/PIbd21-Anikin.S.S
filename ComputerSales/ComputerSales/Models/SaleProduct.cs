@@ -1,14 +1,41 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace ComputerSales.Models
 {
+    [Table("sale_products")]
     public class SaleProduct
     {
-        public int Id { get; private set; }
-        public int SaleId { get; private set; }
-        public int ProductId { get; private set; }
-        public int Count { get; private set; }
-        public decimal PriceAtSale { get; private set; }
+        [Key]
+        [Column("id")]
+        public int Id { get; protected set; }
+
+        [Required]
+        [Column("sale_id")]
+        public int SaleId { get; protected set; }
+
+        [Required]
+        [Column("product_id")]
+        public int ProductId { get; protected set; }
+
+        [Required]
+        [Column("count")]
+        public int Count { get; protected set; }
+
+        [Required]
+        [Column("price_at_sale", TypeName = "numeric(18,2)")]
+        public decimal PriceAtSale { get; protected set; }
+
+        [ForeignKey(nameof(SaleId))]
+        public virtual Sale? Sale { get; protected set; }
+
+        [ForeignKey(nameof(ProductId))]
+        public virtual Product? Product { get; protected set; }
+
+        protected SaleProduct()
+        {
+        }
 
         private SaleProduct(int id, int saleId, int productId, int count, decimal priceAtSale)
         {

@@ -22,17 +22,13 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             cmbClient = new ComboBox();
             dtpSaleDate = new DateTimePicker();
             cmbProduct = new ComboBox();
             numCount = new NumericUpDown();
-            btnAdd = new Button();
+            btnAddItem = new Button();
             dataGridViewItems = new DataGridView();
             lblTotalAmount = new Label();
             btnSave = new Button();
@@ -71,21 +67,22 @@
             numCount.Size = new Size(83, 23);
             numCount.TabIndex = 3;
             // 
-            // btnAdd
+            // btnAddItem
             // 
-            btnAdd.Location = new Point(456, 35);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(168, 36);
-            btnAdd.TabIndex = 4;
-            btnAdd.Text = "Добавить";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAddItem.Location = new Point(456, 35);
+            btnAddItem.Name = "btnAddItem";
+            btnAddItem.Size = new Size(168, 36);
+            btnAddItem.TabIndex = 4;
+            btnAddItem.Text = "Добавить";
+            btnAddItem.UseVisualStyleBackColor = true;
+            btnAddItem.Click += btnAddItem_Click;
             // 
             // dataGridViewItems
             // 
             dataGridViewItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewItems.Location = new Point(12, 137);
             dataGridViewItems.Name = "dataGridViewItems";
-            dataGridViewItems.Size = new Size(269, 124);
+            dataGridViewItems.Size = new Size(598, 171);
             dataGridViewItems.TabIndex = 5;
             // 
             // lblTotalAmount
@@ -101,19 +98,21 @@
             // 
             btnSave.Location = new Point(32, 344);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(171, 52);
+            btnSave.Size = new Size(214, 52);
             btnSave.TabIndex = 7;
             btnSave.Text = "Провести продажу";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(241, 344);
+            btnCancel.Location = new Point(310, 344);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(190, 52);
             btnCancel.TabIndex = 8;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // SaleEditForm
             // 
@@ -124,7 +123,7 @@
             Controls.Add(btnSave);
             Controls.Add(lblTotalAmount);
             Controls.Add(dataGridViewItems);
-            Controls.Add(btnAdd);
+            Controls.Add(btnAddItem);
             Controls.Add(numCount);
             Controls.Add(cmbProduct);
             Controls.Add(dtpSaleDate);
@@ -143,7 +142,7 @@
         private DateTimePicker dtpSaleDate;
         private ComboBox cmbProduct;
         private NumericUpDown numCount;
-        private Button btnAdd;
+        private Button btnAddItem;
         private DataGridView dataGridViewItems;
         private Label lblTotalAmount;
         private Button btnSave;

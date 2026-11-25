@@ -40,13 +40,13 @@
             dataGridViewProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewProducts.Location = new Point(16, 15);
             dataGridViewProducts.Name = "dataGridViewProducts";
-            dataGridViewProducts.Size = new Size(342, 123);
+            dataGridViewProducts.Size = new Size(722, 334);
             dataGridViewProducts.TabIndex = 0;
             dataGridViewProducts.CellContentClick += dataGridViewProducts_CellContentClick;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 394);
+            btnAdd.Location = new Point(16, 394);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(165, 31);
             btnAdd.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(227, 394);
+            btnEdit.Location = new Point(288, 394);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(165, 31);
             btnEdit.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(438, 394);
+            btnDelete.Location = new Point(561, 394);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(165, 31);
             btnDelete.TabIndex = 3;

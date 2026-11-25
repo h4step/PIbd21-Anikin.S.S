@@ -135,7 +135,7 @@
             clbFeatures.FormattingEnabled = true;
             clbFeatures.Location = new Point(400, 146);
             clbFeatures.Name = "clbFeatures";
-            clbFeatures.Size = new Size(213, 94);
+            clbFeatures.Size = new Size(369, 148);
             clbFeatures.TabIndex = 10;
             clbFeatures.SelectedIndexChanged += clbFeatures_SelectedIndexChanged;
             // 

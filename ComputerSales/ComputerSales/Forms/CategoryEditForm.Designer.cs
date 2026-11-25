@@ -11,6 +11,8 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// 
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -38,14 +40,14 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(59, 44);
+            txtName.Location = new Point(12, 60);
             txtName.Name = "txtName";
             txtName.Size = new Size(135, 23);
             txtName.TabIndex = 0;
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(225, 44);
+            txtDescription.Location = new Point(263, 60);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(135, 23);
             txtDescription.TabIndex = 1;
@@ -53,7 +55,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(90, 86);
+            label1.Location = new Point(45, 86);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 2;
@@ -62,7 +64,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(257, 86);
+            label2.Location = new Point(305, 86);
             label2.Name = "label2";
             label2.Size = new Size(62, 15);
             label2.TabIndex = 3;
@@ -70,27 +72,29 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(30, 398);
+            btnSave.Location = new Point(12, 206);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(105, 30);
             btnSave.TabIndex = 4;
             btnSave.Text = "Сохранить";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(180, 398);
+            btnCancel.Location = new Point(293, 206);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(105, 30);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // CategoryEditForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(410, 248);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(label2);
