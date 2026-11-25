@@ -42,7 +42,6 @@
             dataGridViewClients.Name = "dataGridViewClients";
             dataGridViewClients.Size = new Size(252, 131);
             dataGridViewClients.TabIndex = 0;
-            dataGridViewClients.CellContentClick += dataGridViewClients_CellContentClick;
             // 
             // btnAdd
             // 
