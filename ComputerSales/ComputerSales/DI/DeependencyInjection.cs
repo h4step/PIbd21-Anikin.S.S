@@ -47,14 +47,12 @@ namespace ComputerSales
                 options.UseNpgsql(connectionString);
             });
 
-            // Регистрация репозиториев
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<ISaleRepository, SaleRepository>();
             services.AddTransient<ISaleProductRepository, SaleProductRepository>();
 
-            // Регистрация форм
             services.AddTransient<MainForm>();
             services.AddTransient<ProductEditForm>();
             services.AddTransient<SaleEditForm>();

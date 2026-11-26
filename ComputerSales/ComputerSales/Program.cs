@@ -12,13 +12,10 @@ namespace ComputerSales
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // 1. —оздаем и настраиваем наш контейнер зависимостей
             var serviceProvider = DependencyInjection.ConfigureServices();
 
-            // 2. ƒостаем главную форму из контейнера (все репозитории внедр€тс€ автоматически)
             var mainForm = serviceProvider.GetRequiredService<MainForm>();
 
-            // 3. «апускаем приложение
             Application.Run(mainForm);
         }
     }
