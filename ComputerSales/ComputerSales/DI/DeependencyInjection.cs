@@ -10,14 +10,11 @@ namespace ComputerSales
         {
             var services = new ServiceCollection();
 
-            // Регистрация репозиториев
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<ISaleRepository, SaleRepository>();
             services.AddTransient<ISaleProductRepository, SaleProductRepository>();
-
-            // Регистрация главной формы 
             services.AddTransient<MainForm>();
 
             return services.BuildServiceProvider();
