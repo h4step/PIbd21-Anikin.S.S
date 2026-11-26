@@ -70,16 +70,17 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(30, 398);
+            btnSave.Location = new Point(74, 176);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(105, 30);
             btnSave.TabIndex = 4;
             btnSave.Text = "Сохранить";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(180, 398);
+            btnCancel.Location = new Point(257, 176);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(105, 30);
             btnCancel.TabIndex = 5;
@@ -90,7 +91,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(425, 267);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(label2);

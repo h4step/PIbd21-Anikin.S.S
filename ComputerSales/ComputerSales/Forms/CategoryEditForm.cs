@@ -26,11 +26,10 @@ namespace ComputerSales.Forms
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
                 MessageBox.Show("Название категории не может быть пустым.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                Close();
             }
 
             DialogResult = DialogResult.OK;
-            Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -38,5 +37,6 @@ namespace ComputerSales.Forms
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
     }
 }

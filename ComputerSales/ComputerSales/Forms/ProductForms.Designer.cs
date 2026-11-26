@@ -40,7 +40,7 @@
             dataGridViewProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewProducts.Location = new Point(16, 15);
             dataGridViewProducts.Name = "dataGridViewProducts";
-            dataGridViewProducts.Size = new Size(342, 123);
+            dataGridViewProducts.Size = new Size(686, 334);
             dataGridViewProducts.TabIndex = 0;
             dataGridViewProducts.CellContentClick += dataGridViewProducts_CellContentClick;
             // 

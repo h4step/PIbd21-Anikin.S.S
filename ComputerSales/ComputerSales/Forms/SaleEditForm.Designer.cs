@@ -79,13 +79,14 @@
             btnAdd.TabIndex = 4;
             btnAdd.Text = "Добавить";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dataGridViewItems
             // 
             dataGridViewItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewItems.Location = new Point(12, 137);
             dataGridViewItems.Name = "dataGridViewItems";
-            dataGridViewItems.Size = new Size(269, 124);
+            dataGridViewItems.Size = new Size(432, 185);
             dataGridViewItems.TabIndex = 5;
             // 
             // lblTotalAmount
@@ -105,6 +106,7 @@
             btnSave.TabIndex = 7;
             btnSave.Text = "Провести продажу";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click_1;
             // 
             // btnCancel
             // 
@@ -114,6 +116,7 @@
             btnCancel.TabIndex = 8;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click_1;
             // 
             // SaleEditForm
             // 

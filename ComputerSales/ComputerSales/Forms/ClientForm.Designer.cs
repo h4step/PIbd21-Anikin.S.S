@@ -40,12 +40,12 @@
             dataGridViewClients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewClients.Location = new Point(24, 27);
             dataGridViewClients.Name = "dataGridViewClients";
-            dataGridViewClients.Size = new Size(252, 131);
+            dataGridViewClients.Size = new Size(674, 167);
             dataGridViewClients.TabIndex = 0;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(24, 405);
+            btnAdd.Location = new Point(24, 221);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(141, 33);
             btnAdd.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(287, 405);
+            btnEdit.Location = new Point(244, 221);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(141, 33);
             btnEdit.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(553, 405);
+            btnDelete.Location = new Point(462, 221);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(141, 33);
             btnDelete.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 268);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnAdd);

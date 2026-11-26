@@ -121,5 +121,20 @@ namespace ComputerSales.Forms
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

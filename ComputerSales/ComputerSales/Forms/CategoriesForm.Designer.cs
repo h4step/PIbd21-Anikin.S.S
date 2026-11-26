@@ -40,9 +40,8 @@
             dataGridViewCategories.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCategories.Location = new Point(28, 18);
             dataGridViewCategories.Name = "dataGridViewCategories";
-            dataGridViewCategories.Size = new Size(240, 150);
+            dataGridViewCategories.Size = new Size(578, 316);
             dataGridViewCategories.TabIndex = 0;
-
             // 
             // btnAdd
             // 

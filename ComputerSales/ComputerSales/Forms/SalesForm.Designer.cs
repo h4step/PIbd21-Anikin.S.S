@@ -40,25 +40,26 @@
             dataGridViewSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSales.Location = new Point(12, 22);
             dataGridViewSales.Name = "dataGridViewSales";
-            dataGridViewSales.Size = new Size(215, 102);
+            dataGridViewSales.Size = new Size(296, 210);
             dataGridViewSales.TabIndex = 0;
             // 
-            // dataGridViewItems
+            // dataGridViewSaleItems
             // 
             dataGridViewSaleItems.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewSaleItems.Location = new Point(379, 22);
-            dataGridViewSaleItems.Name = "dataGridViewItems";
-            dataGridViewSaleItems.Size = new Size(215, 102);
+            dataGridViewSaleItems.Name = "dataGridViewSaleItems";
+            dataGridViewSaleItems.Size = new Size(347, 210);
             dataGridViewSaleItems.TabIndex = 1;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(12, 234);
+            btnAdd.Location = new Point(12, 369);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(190, 69);
             btnAdd.TabIndex = 2;
             btnAdd.Text = " Добавить";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // SalesForm
             // 

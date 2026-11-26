@@ -70,27 +70,29 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(43, 387);
+            btnSave.Location = new Point(36, 138);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(128, 25);
             btnSave.TabIndex = 4;
             btnSave.Text = "Сохранить";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(222, 387);
+            btnCancel.Location = new Point(246, 138);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(128, 25);
             btnCancel.TabIndex = 5;
             btnCancel.Text = "Отмена";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // ClientEditForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(498, 247);
             Controls.Add(btnCancel);
             Controls.Add(btnSave);
             Controls.Add(label2);
