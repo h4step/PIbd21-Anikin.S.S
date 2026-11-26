@@ -62,7 +62,22 @@ namespace ComputerSales.Repositories
             ArgumentNullException.ThrowIfNull(product);
             _logger.LogInformation("Обновление товара: {@Product}", product);
 
-            _context.Products.Update(product);
+            var tracked = _context.ChangeTracker.Entries<Product>()
+                .FirstOrDefault(e => e.Entity.Id == product.Id)?.Entity;
+
+            if (tracked == null)
+            {
+                tracked = _context.Products.FirstOrDefault(p => p.Id == product.Id);
+                if (tracked == null)
+                {
+                    _logger.LogWarning("Товар с Id={ProductId} не найден для обновления.", product.Id);
+                    return;
+                }
+            }
+
+            _context.Entry(tracked).CurrentValues.SetValues(product);
+            _context.Entry(tracked).Reference(p => p.Category).CurrentValue = null;
+
             _context.SaveChanges();
 
             _logger.LogInformation("Товар обновлён, Id={ProductId}.", product.Id);

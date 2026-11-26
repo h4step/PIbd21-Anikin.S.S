@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using ComputerSales.Data;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ComputerSales
@@ -9,6 +10,7 @@ namespace ComputerSales
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
